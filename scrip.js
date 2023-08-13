@@ -3,14 +3,16 @@ submit.addEventListener('click',(e)=> {
     let ti = title.value
     let des = desc.value
     localStorage.setItem(ti,des)
-    wrt.innerHTML =
-    `<h3>${ti} : <h4>${des}<h4/><h3/>`
+    wrt.innerHTML = wrt.innerHTML +
+    `<h3>${ti} : <span class = "small">${des}<span/><h3/>`
+    title.value = ''
+    desc.value = ''
 
 })
 
 del.addEventListener('click',(e)=> {
     console.log(e)
     let del = title.value
-    localStorage.removeItem(del)
+    localStorage.clear()
     wrt.innerHTML =''
 })

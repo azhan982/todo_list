@@ -13,15 +13,32 @@
     max-width: 600px;
     background-color: grey;
     margin: auto;
+    padding: 20px;
+    border-radius: 15px;
 }
-.main{
-    display: grid;
-    grid-template-columns: auto ;
-} 
+
  .box{
     display: flex;
     flex-direction: column;
+    padding-top: 10px;
 }
-h3{
-    display: inline;
+
+label{
+    padding-bottom: 3px;
+}
+input{
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+button{
+    margin-bottom: 10px;
+}
+.small{
+    font-size: 16px;
+}
+#exterior{
+    background-color: white;
+}
+#wrt{
+    background-color: white;
 }
